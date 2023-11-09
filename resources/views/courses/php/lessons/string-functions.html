@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodnavis | Php course</title>
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/resources/css/lesson-style.css">
+    <link href="/themes/prism.css" rel="stylesheet" />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-bar">
+                <li class="nav-item"><a href="/"><img src="/images/logo.png" alt="logo" id="logo"></a></li>
+            </ul>
+        </nav>
+
+        <section class="nav-display">
+            <div class="lesson-content">
+                <a href="/resources/views/courses/php/index.html" class="page-back">Бозгашт</a>
+                <h1 class="lesson-title">Функсияҳои сатр</h1>
+                <p class="lesson-description">Якчанд роҳҳо барои идора кардани сатр бо истифода аз функсияҳои
+                    дарунсохташудаи PHP мавҷуданд. Дар ин мақола, мо 15 функсияҳои маъмултарини сатри PHP-ро меомӯзем:
+                </p>
+                <ol>
+                    <li>strlen()</li>
+                    <li>strpos()</li>
+                    <li>str_replace()</li>
+                    <li>ucwords()</li>
+                    <li>strtoupper()</li>
+                    <li>strtolower()</li>
+                    <li>substr()</li>
+                    <li>trim()</li>
+                    <li>explode()</li>
+                    <li>implode()</li>
+                </ol>
+            </div>
+        </section>
+    </header>
+
+    <hr class="divider">
+
+    <main>
+        <div class="lesson-item-card">
+            <p><span class="lesson-item-headers">1. strlen($str)</span> - ин функсия дарозии сатр ё шумораи аломатҳоро
+                дар сатр, аз ҷумла фосилаҳои холӣ бармегардонад.</p>
+
+            <p class="example-header">Код:</p>
+            <pre><code class="language-php">$str = "Welcome to Kodnavis";
+
+// истифодаи strlen дар усули echo
+echo "Length of the string is: ". strlen($str);</code></pre>
+
+            <p class="example-header">Натиҷа:</p>
+            <pre><code class="language-php">Length of the string is: 23</code></pre>
+        </div>
+
+        <div class="lesson-item-card">
+            <p><span class="lesson-item-headers">2. strpos($str, $text)</span> - ин функсия барои дарёфти мавқеи
+                матн/калима дар сатри додашуда
+                истифода мешавад. Ҳар як ҳарфи сатр дорои индекс мебошанд, яъне дар индекси 0 аввалин
+                ҳарфи сатр ҷойгир мебошад, дар индекси 1 ҳарфи дуюми сатр ва ғ. Мисли массив, индекси сатр
+                низ аз сифр шуруъ мешавад.
+            </p>
+
+            <p class="example-header">Код:</p>
+            <pre><code class="language-php">$str = "Welcome to Kodnavis";
+
+// истифодаи strpos дар усули echo
+echo "Position of 'Kodnavis' in string: ". strpos($str, 'Kodnavis');</code></pre>
+
+            <p class="example-header">Натиҷа:</p>
+            <pre><code class="language-php">Position of 'Kodnavis' in string: 11</code></pre>
+        </div>
+
+        <div class="lesson-item-card">
+            <p><span class="lesson-item-headers">3. str_replace($replacethis, $replacewith, $str)</span> - ин функсия
+                барои иваз кардани як
+                қисми сатр бо баъзе матн истифода мешавад. Ҳангоми истифодаи ин функсия, аргументи аввал
+                қисми сатрест, ки шумо онро иваз кардан мехоҳед, аргументи дуюм матни навест, ки шумо
+                мехоҳед дохил кунед ва аргументи охирин худи тағирёбандаи сатр аст.
+            </p>
+
+            <p class="example-header">Код:</p>
+            <pre><code class="language-php">$str = str_replace("Kodnavis", "Kodnavis.ru", "Welcome to Kodnavis");
+
+echo $str;</code></pre>
+
+            <p class="example-header">Натиҷа:</p>
+            <pre><code class="language-php">Welcome to Kodnavis.ru</code></pre>
+        </div>
+
+        <div class="lesson-item-card">
+            <p><span class="lesson-item-headers">4. ucwords($str)</span> - ин функсия барои формат кардани сатр истифода
+                мешавад. Ин функсия
+                аввалин ҳарф/аломати ҳар як калимаро дар сатр ба ҳарфи калон табдил медиҳад.
+            </p>
+
+            <p class="example-header">Код:</p>
+            <pre><code class="language-php">$str = "welcome to kodnavis";
+ 
+echo ucwords($str);</code></pre>
+
+            <p class="example-header">Натиҷа:</p>
+            <pre><code class="language-php">Welcome To Kodnavis</code></pre>
+        </div>
+
+        <div class="lesson-item-card">
+            <p><span class="lesson-item-headers">5. strtoupper($str)</span> - ин функсия барои табдил додани ҳар
+                ҳарф/аломати ҳар як калимаи сатр
+                ба ҳарфи калон истифода мешавад.</p>
+
+            <p class="example-header">Код:</p>
+            <pre><code class="language-php">$str = "welcome to kodnavis";
+
+echo strtoupper($str);</code></pre>
+
+            <p class="example-header">Натиҷа:</p>
+            <pre><code class="language-php">WELCOME TO KODNAVIS</code></pre>
+        </div>
+
+        <div class="lesson-item-card">
+            <p><span class="lesson-item-headers">6. strtolower($str)</span> - ин функсия барои табдил додани ҳар
+                ҳарф/аломати ҳар як калимаи сатр
+                ба ҳарфи хурд истифода мешавад.</p>
+
+            <p class="example-header">Код:</p>
+            <pre><code class="language-php">$str = "WELCOME TO KODNAVIS";
+                
+echo strtolower($str);</code></pre>
+
+            <p class="example-header">Натиҷа:</p>
+            <pre><code class="language-php">welcome to kodnavis</code></pre>
+        </div>
+
+        <div class="lesson-item-card">
+            <p><span class="lesson-item-headers">7. substr($str, $start, $length)</span> - ин функсия барои истихроҷи
+                қисми сатр (зерсатр), ки аз
+                мавқеи муайян, дарозии муайян оғоз мешавад, истифода мешавад.</p>
+            <p>Аргументи аввал худи сатр аст, аргументи дуюм индекси ибтидоии зерсатри истихроҷшаванда ва
+                аргументи сеюм дарозии зерсатри истихроҷшаванда мебошад.
+            </p>
+
+            <p class="example-header">Код:</p>
+            <pre><code class="language-php">$str = "Welcome to Kodnavis";
+                
+echo substr($str, 11, 8);</code></pre>
+
+            <p class="example-header">Натиҷа:</p>
+            <pre><code class="language-php">Kodnavis</code></pre>
+        </div>
+
+        <div class="lesson-item-card">
+            <p><span class="lesson-item-headers">8. trim($str, charlist)</span> - ин хусусият барои нест кардани ҷойҳои
+                зиедатӣ дар аввал ва охири
+                сатр истифода мешавад. Аргументи дуюми <i>charlist</i> ихтиерӣ аст. Мо метавонем рӯйхати
+                аломатҳоро ба мисли сатр ҳамчун аргументи дуюм барои нест кардани ин аломатҳо аз сатри
+                асосӣ пешниҳод кунем.</p>
+
+            <p class="example-header">Код:</p>
+            <pre><code class="language-php">$str1 = " Hello World ";
+echo trim($str1);
+
+$str2 = "Hello Hello";
+echo trim($str2,"Heo");</code></pre>
+
+            <p class="example-header">Натиҷа:</p>
+            <pre><code class="language-php">Hello World
+llo Hell</code></pre>
+            <p>Тавре, ки шумо дар натиҷа мебинед, дар ҳолати аввал, ҷойҳои иловагӣ дар аввал ва охири сатр
+                нест карда шудаанд ва дар ҳолати дуюм, аломатҳои зикршуда аз аввал ва охири сатр хориҷ карда
+                шудаанд.
+            </p>
+        </div>
+
+        <div class="lesson-item-card">
+            <p><span class="lesson-item-headers">9. explode(separator, $str, $limit)</span> - ин функсия барои тақсим
+                кардани сатр, сохтани
+                массив аз қисмҳои шикастаи сатр ва баргардонидани массив истифода мешавад. Аргументи
+                аввал, <i>separator</i>, муайян мекунад, ки сатрро аз куҷо бояд шикаст. Ин метавонад фосила, дефис(-)
+                ё ягон аломати дигар бошад</p>
+            <p>Аргументи дуюм худи сатр аст ва аргументи сеюм маҳдудиятест, ки шумораи элементҳои
+                баргардонидашудаи массивро муайян мекунад. Аргументи сеюм ихтиёрӣ аст.</p>
+
+            <p class="example-header">Код:</p>
+            <pre><code class="language-php">$str = "Its a beautiful day";
+                
+// we can directly print the result of explode
+print_r(explode(" ", $str));</code></pre>
+
+            <p class="example-header">Натиҷа:</p>
+            <pre><code class="language-php">Array (
+    [0] => Its
+    [1] => a
+    [2] => beautiful
+    [3] => day
+)</code></pre>
+            <p>Дар мисоли боло, мо фосиларо ҳамчун тақсимкунанда барои шикастани сатр ва баргардонидани
+                массив нишон додем.</p>
+            <p>Агар мо инчунин <i>limit</i> аргументи сеюмро муайян кунем, мо метавонем шумораи элементҳои
+                баргардонидашудаи массивро маҳдуд кунем. Масалан, агар мо 2-ро ҳамчун аргументи сеюм
+                нишон диҳем, пас мо танҳо 2 элементро дар массив мегирем, дутои аввалро.
+            </p>
+        </div>
+
+        <div class="lesson-item-card">
+            <p><span class="lesson-item-headers">10. implode(separator, $arr)</span> - ин функсия барои сохтани сатр бо
+                истифода аз элементҳои
+                массив аз массиви додашуда ва якҷоя кардани онҳо бо истифода аз тақсимкунанда истифода
+                мешавад.
+            </p>
+
+            <p class="example-header">Код:</p>
+            <pre><code class="language-php">$arr = array("Its", "a", "beautiful", "day");
+
+echo implode(" ", $arr);
+echo implode("-", $arr);
+echo implode("/", $arr);</code></pre>
+
+            <p class="example-header">Натиҷа:</p>
+            <pre><code class="language-php">Its a beautiful day
+Its-a-beautiful-day
+Its/a/beautiful/day</code></pre>
+        </div>
+    </main>
+
+    <script src="prism.js"></script>
+</body>
+
+</html>

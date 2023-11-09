@@ -1,0 +1,47 @@
+.lesson-item-card {
+    margin-bottom: 32px;
+}
+
+.lesson-title {
+    margin-bottom: 12px;
+}
+
+.lesson-description {
+    text-align: justify;
+    margin-bottom: 12px;
+    line-height: 22px;
+}
+
+.lesson-content ol {
+    margin-left: 32px;
+}
+
+.lesson-content ol li {
+    margin-bottom: 8px;
+}
+
+.lesson-item-card p {
+    text-align: justify;
+    line-height: 22px;
+    margin-top: 8px;
+}
+
+.lesson-item-headers {
+    color: #ed3d49;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.example-header {
+    margin: 12px 0;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.language-php {
+    background-color: rgb(59, 59, 59) !important; 
+    display: block; 
+    padding: 12px; 
+    overflow-x: scroll; 
+    border-radius: 4px; 
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}

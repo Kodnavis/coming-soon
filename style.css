@@ -188,6 +188,51 @@ main > h1 {
     border-radius: 4px;
 }
 
+.course-title {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.course-thumbnail img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.course-content h2 {
+    font-weight: 600;
+    margin: 16px 0;
+}
+
+.course-content p {
+    font-weight: 300;
+}
+
+.lesson-card {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 16px 12px;
+    font-weight: 500;
+}
+
+.lesson-card:first-child {
+    border-radius: 4px 4px 0 0;
+}
+
+.lesson-card:last-child {
+    border-radius: 0 0 4px 4px;
+}
+
+.lesson-card:hover {
+    background-color: #efefef;
+}
+
+.page-back {
+    display: block;
+    margin-bottom: 24px;
+    text-decoration: underline;
+    font-weight: 300;
+}
+
 @media screen and (max-width: 832px) {
     .course-card {
         flex-direction: column;
@@ -227,6 +272,7 @@ main > h1 {
     .team-member-text {
         flex-direction: column;
     }
+
     .team-member-text img {
         width: 100px !important;
     }
