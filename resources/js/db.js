@@ -32,7 +32,7 @@ const courses = [
         'text': 'Курси HTML одатан асосҳои HTML, аз ҷумла сохтор, синтаксис ва семантикаи онро фаро мегирад. Дар ниҳоят, курс донишҷӯёнро бо хусусиятҳои HTML5 ба монанди унсурҳои семантикӣ, унсурҳои мултимедиявӣ, шаклҳо ва APIҳо шинос мекунад.',
         'picture': '/images/courses/HTMLCourse.png',
         'tag': 'html,web,frontend',
-        'url': '/resources/views/courses/php/index.html',
+        'url': '/resources/views/courses/html/index.html',
         'visible': true,
     },
     {

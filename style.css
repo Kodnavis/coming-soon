@@ -90,7 +90,7 @@ hr {
     font-weight: 500;
 }
 
-main {  
+main {
     padding: 12px 10%;
 }
 
@@ -214,11 +214,11 @@ main > h1 {
     font-weight: 500;
 }
 
-.lesson-card:first-child {
+.first-lesson-card {
     border-radius: 4px 4px 0 0;
 }
 
-.lesson-card:last-child {
+.last-lesson-card {
     border-radius: 0 0 4px 4px;
 }
 
@@ -238,11 +238,11 @@ main > h1 {
         flex-direction: column;
         border-radius: 4px;
     }
-    
+
     .course-card img {
         width: 100% !important;
     }
-    
+
     .course-card > div {
         padding: 0 8px;
         padding-bottom: 32px;
@@ -291,7 +291,7 @@ main > h1 {
         margin: 12px 15%;
     }
 
-    main {  
+    main {
         padding: 12px 15%;
     }
 }
@@ -323,7 +323,7 @@ main > h1 {
         margin: 12px 20%;
     }
 
-    main {  
+    main {
         padding: 12px 20%;
     }
 }
