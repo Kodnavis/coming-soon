@@ -7,7 +7,7 @@ team.forEach(member => {
                 <img src="' + member['picture'] + '" alt="team member">\
                 <div>\
                     <h3>' + member['fullName'] + '</h3>\
-                    <p>' + member['role'] + '</p>\
+                    <p class="team-member-role">' + member['role'] + '</p>\
                 </div>\
             </div>\
             <button onclick="location' + ".href='" + member['url'] + "'" + '">Дунбол кардан</button>\
