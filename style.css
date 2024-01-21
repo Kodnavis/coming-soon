@@ -29,13 +29,8 @@ hr {
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: end;
     padding: 12px 10%;
     margin-bottom: 24px;
-}
-
-.logo {
-    margin-right: auto;
 }
 
 #logo {
