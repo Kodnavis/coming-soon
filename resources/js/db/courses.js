@@ -1,30 +1,3 @@
-const quotes = [
-    {
-        'id': 1,
-        'writer': 'Алберт Эйнштейн',
-        'text': 'Ҳаёт мисли савори кардани дучарха аст. Барои нигоҳ доштани тавозуни худ, шумо бояд ҳаракатро давом диҳед.',
-        'picture': '/images/quoteAuthors/AlbertEinstein.jpg'
-    },
-    {
-        'id': 2,
-        'writer': 'Маркус Туллиус Сицерон',
-        'text': 'Ҳуҷраи бе китоб мисли ҷисми бе рӯҳ аст.',
-        'picture': '/images/quoteAuthors/MarcusTulliusCicero.jpg'
-    },
-    {
-        'id': 3,
-        'writer': 'Уинстон С. Черчилл',
-        'text': 'Муваффақият ниҳоӣ нест; нокомӣ марговар нест: Ин далерӣ барои идома додан аст.',
-        'picture': '/images/quoteAuthors/WinstonChurchill.jpg'
-    },
-    {
-        'id': 4,
-        'writer': 'Абу Али Хусейн ибн Абдаллах ибн Сина',
-        'text': 'Ҳар кӣ дунёро бихоҳад, биомӯзад ва ҳар кӣ охиратро бихоҳад, амал кунад.',
-        'picture': '/images/quoteAuthors/IbniSino.jpg'
-    },
-];
-
 const courses = [
     {
         'id': 1,
@@ -52,29 +25,5 @@ const courses = [
         'tag': 'php,web,backend',
         'url': '/resources/views/courses/php/index.html',
         'visible': true,
-    },
-];
-
-const team = [
-    {
-        'id': 1,
-        'fullName': 'Шокиров Муҳсин',
-        'role': 'Full-stack developer',
-        'picture': '/images/coTeam/me.png',
-        'url': 'https://github.com/Muxsin',
-    },
-    {
-        'id': 2,
-        'fullName': 'Зайниддинов Ҳамза',
-        'role': 'PHP developer',
-        'picture': '/images/coTeam/hamza.png',
-        'url': 'https://github.com/Hamza4ik',
-    },
-    {
-        'id': 3,
-        'fullName': 'Зикирзода Муҳаммад',
-        'role': 'Full-stack developer',
-        'picture': '/images/coTeam/maga.png',
-        'url': 'https://github.com/iammaga',
     },
 ];
